@@ -2,6 +2,7 @@
 netinf is a simple tool
 that allow you to get some information
 from your network ...
+>netinf = network + information
 
 ## Installation
 first you need to install nmap
