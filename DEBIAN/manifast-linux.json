@@ -1,0 +1,32 @@
+{
+    "control": {
+        "Package": "netinf",
+        "Version": "1.0.0",
+        "Architecture": "all",
+        "Maintainer": "G705-Ghilan <G705Ghilan@gmail.com>",
+        "Homepage": "None",
+        "Description": [
+            "This is the hello world package",
+            " It is just an example for termux-create-package",
+            " .",
+            " It is just prints 'Hello, world'"
+        ]
+    },
+    "installation_prefix": "/usr",
+    "deb_dir": "../build",
+    "files_dir": "../",
+    "control_files_dir": "./",
+    "deb_name": "netinf_1.0_all_linux.deb",
+
+    "data_files": {
+        "/opt/netinf/netinf.py": {
+            "source": "netinf/netinf.py"
+        },
+        "/opt/netinf/libpp.py": {
+            "source": "netinf/libpp.py"
+        },
+        "/bin/netinf": {
+            "source": "netinf/netinf"
+        }
+    }
+}
