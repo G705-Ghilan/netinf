@@ -8,6 +8,7 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.console import Console
 from rich.table import Table
 
+
 print = Console().print
 
 
@@ -16,7 +17,6 @@ class Netinf:
     def __init__(self) -> None:
         self.ip: str = self.__ip
         self.scanner = nmap.PortScanner()
-    
 
     @property
     def __ip(self) -> str:
@@ -26,9 +26,6 @@ class Netinf:
     
     def scan_connetced_devices(self) -> None:
         self.scanner.scan(f"{self.ip}/24", arguments='-sn')
-        
-    # def scan_with_ports(self) -> None:
-    #     self.scanner.scan(f"{self.ip}/24", arguments='-sS -T4 -p 1-65535')
     
     def scan(self) -> None:
         with Progress(SpinnerColumn(),  TextColumn("[progress.description]{task.description}"),) as prog:
@@ -48,6 +45,9 @@ class Netinf:
                 table.add_row(self.scanner[host].hostname(),self.scanner[host].hostnames()[0]["type"], host, mac, self.scanner[host].state(), self.scanner[host]["status"]["reason"], style='none' if mac else 'dim', )
         print(table)
 
-netinf = Netinf()
-netinf.scan()
+
+
+if __name__ == "__main__":
+    netinf = Netinf()
+    netinf.scan()
 

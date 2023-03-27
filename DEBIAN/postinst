@@ -28,17 +28,6 @@ for lib in "${PYTHON_LIBS[@]}"; do
     pip install $lib
 done
 
-# if [ "$PREFIX" = "" ]; then
-#     sudo apt-get update
-#     for tool in T$ERMINAL_TOOLS; do
-#         sudo apt-get install $tool
-#     done
-# else
-#     pkg update
-#     for tool in $TERMINAL_TOOLS; do
-#         pkg install $tool
-#     done
-# fi
 
 
 

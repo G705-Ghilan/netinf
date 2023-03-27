@@ -7,10 +7,9 @@
         "Depends": "python (>= 3.0), libandroid-support",
         "Homepage": "None",
         "Description": [
-            "This is the hello world package",
-            " It is just an example for termux-create-package",
-            " .",
-            " It is just prints 'Hello, world'"
+            "netinf is a simple python tool",
+            " that allow you to get some information",
+            " from your network ..."
         ]
     },
     "installation_prefix": "/data/data/com.termux/files/usr",
@@ -21,9 +20,6 @@
     "data_files": {
         "opt/netinf/netinf.py": {
             "source": "netinf/netinf.py"
-        },
-        "opt/netinf/libpp.py": {
-            "source": "netinf/libpp.py"
         },
         "bin/netinf": {
             "source": "netinf/netinf"
