@@ -40,6 +40,6 @@ just enter netinf to run the tool
 ```
 netinf
 ```
-note: that you need to provide sudo command to get more info ```sudo netinf```
+>note: that you need to provide sudo command to get more info ```sudo netinf```
 
 
